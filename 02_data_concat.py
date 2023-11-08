@@ -11,15 +11,16 @@ for path in data_path:
     df_temp = pd.read_csv(path)
     df = pd.concat([df, df_temp])
 
-X = df['effect']
-Y = df['category']
-Z = df['name']
+df.effect.dropna()
+df.category.dropna()
+df.name.dropna()
+
 df = df.dropna()
 
 print(df.head())
 print(df['category'].value_counts())
 
 df.info()
-df.to_csv('./crawling_data/nutrients_effects_{}.csv'.format(
-    datetime.datetime.now().strftime('%Y%m%d')), index=False)
+# df.to_csv('./crawling_data/nutrients_effects_{}.csv'.format(
+#     datetime.datetime.now().strftime('%Y%m%d')), index=False)
 

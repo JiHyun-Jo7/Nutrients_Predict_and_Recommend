@@ -21,6 +21,6 @@ print(df.head())
 print(df['category'].value_counts())
 
 df.info()
-# df.to_csv('./crawling_data/nutrients_effects_{}.csv'.format(
-#     datetime.datetime.now().strftime('%Y%m%d')), index=False)
+df.to_csv('./crawling_data/nutrients_effects_{}.csv'.format(
+    datetime.datetime.now().strftime('%Y%m%d')), index=False)
 

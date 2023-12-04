@@ -3,7 +3,7 @@
 ## 개발 환경 (IDE)
 - Win10
 - Pycharm 2023.2
-- 
+- Python 3.7
 
 ---
 ##  Project Objectives (프로젝트 목표)

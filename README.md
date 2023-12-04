@@ -14,7 +14,18 @@ In addition, a new nutritional recommendation system through symptoms was added 
 ---
 ## [01. Crawling Data](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/14c4883aed4a2f3beeb2dda1c5409048e4b9d581/01_crawling_data.py)
 ```
-# 이전 코드
+for i in range(6):
+    section_url = 'https://kr.iherb.com/c/{}'.format(category[i])
+    df_titles = pd.DataFrame()
+    titles = []
+    for j in range(1, pages[i] + 1):  # pages[i]+1
+        if j == 1:
+            url = section_url
+        else:
+            url = section_url + '?p={}'.format(j)
+        driver.get(url)
+        time.sleep(3)
+        product = driver.find_elements(By.CLASS_NAME, 'product-cell-container')
 ```
 - 데이터 크롤링을 하기 위해서는 상품의 데이터가 필요하다 하지만 해당 웹사이트에서 제품들의 URL에는 규칙성이 없다
 - 이전 프로젝트에선 path를 사용하여 제품 사이트에 접근했는데 접속할때마다 쿠키 허용을 반드시 해야했고,

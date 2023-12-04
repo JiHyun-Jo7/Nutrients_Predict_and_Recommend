@@ -45,15 +45,15 @@ for i in range(6):
 - 이번 프로젝트에선 자동으로 쿠키 허용, 광고창을 종료하였고 제품 페이지를 수집하여 접속했다
 - 그 결과 오류 발생 빈도도 대폭 감소하였으며 크롤링 소요 시간 또한 대폭 감소하였다
 ---
-## 02. [Data Concat]()
+## 02. [Data Concat](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/02_data_concat.py)
 
 ---
-## 03. [Preprocessing]()
+## 03. [Preprocessing](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/03_preprocessing.py)
 
 ---
-## 04. [Model Learning]()
+## 04. [Model Learning](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/04_model_learning.py)
 
 ---
-## 05. [Model_predict]()
+## 05. [Model_predict](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/05_model_predict.py)
 
 ---

@@ -31,7 +31,16 @@ for i in range(6):
 - 이전 프로젝트에선 path를 사용하여 제품 사이트에 접근했는데 접속할때마다 쿠키 허용을 반드시 해야했고,
 - 중간에 뜨는 광고창 때문에 PATH 마저 불규칙적으로 변해 오류가 자주 발생하고 PATH를 찾지 못하는 등 등 많은 시간이 소요됐다.
 ```
-# 이번 코드
+response = requests.get(section_url, headers=headers)
+response.raise_for_status()
+soup = bs(response.text, 'html.parser')
+
+product_url = []
+for z in soup.find_all('div', {'class': 'absolute-link-wrapper'}):
+  for y in z.find_all({'a'}):
+    if y.get('href') is not None:
+      product_url.append(y.get('href'))
+      del product_url[0]              # Delete unrelated url
 ```
 - 이번 프로젝트에선 자동으로 쿠키 허용, 광고창을 종료하였고 제품 페이지를 수집하여 접속했다.
 - 그 결과 오류 발생 빈도도 대폭 감소하였으며 크롤링 소요 시간 또한 대폭 감소하였다.

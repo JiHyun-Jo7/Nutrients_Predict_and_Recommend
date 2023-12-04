@@ -1,18 +1,20 @@
 # 💊Nutrients Predict and Recommend
 ---
-## 개발 환경 (IDE)
+## 1. 개발 환경 (IDE)
 - Win10
 - Pycharm 2023.2
 - Python 3.7
 
 ---
-##  Project Objectives (프로젝트 목표)
+##  2. Project Objectives (프로젝트 목표)
 - I tried to compensate for the disappointment in the [last nutritional classification program](https://github.com/JiHyun-Jo7/IntelCapsule)  
 In addition, a new nutritional recommendation system through symptoms was added to the program
 - [이전에 진행한 영양제 분류 프로젝트](https://github.com/JiHyun-Jo7/IntelCapsule)에서 아쉬웠던 점을 보완하고자 했으며,  
   전에 없던 증상을 통한 추천 시스템을 새로 추가했다
 ---
-## 01. [Crawling Data](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/14c4883aed4a2f3beeb2dda1c5409048e4b9d581/01_crawling_data.py)
+## 3. Code Review
+---
+### 01. [Crawling Data](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/14c4883aed4a2f3beeb2dda1c5409048e4b9d581/01_crawling_data.py)
 ```
 for i in range(6):
     section_url = 'https://kr.iherb.com/c/{}'.format(category[i])
@@ -45,15 +47,15 @@ for i in range(6):
 - 이번 프로젝트에선 자동으로 쿠키 허용, 광고창을 종료하였고 제품 페이지를 수집하여 접속했다
 - 그 결과 오류 발생 빈도도 대폭 감소하였으며 크롤링 소요 시간 또한 대폭 감소하였다
 ---
-## 02. [Data Concat](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/02_data_concat.py)
+### 02. [Data Concat](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/02_data_concat.py)
 
 ---
-## 03. [Preprocessing](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/03_preprocessing.py)
+### 03. [Preprocessing](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/03_preprocessing.py)
 
 ---
-## 04. [Model Learning](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/04_model_learning.py)
+### 04. [Model Learning](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/04_model_learning.py)
 
 ---
-## 05. [Model_predict](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/05_model_predict.py)
+### 05. [Model_predict](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/e2ea50df5acf610e29da6c590f75c5b2601d9b4f/05_model_predict.py)
 
 ---

@@ -13,7 +13,6 @@ In addition, a new nutritional recommendation system through symptoms was added 
   전에 없던 증상을 통한 추천 시스템을 새로 추가했다
 ---
 ## 3. Code Review
----
 ### 01. [Crawling Data](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/14c4883aed4a2f3beeb2dda1c5409048e4b9d581/01_crawling_data.py)
 ```
 for i in range(6):

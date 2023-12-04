@@ -37,10 +37,10 @@ soup = bs(response.text, 'html.parser')
 
 product_url = []
 for z in soup.find_all('div', {'class': 'absolute-link-wrapper'}):
-  for y in z.find_all({'a'}):
-    if y.get('href') is not None:
-      product_url.append(y.get('href'))
-      del product_url[0]              # Delete unrelated url
+    for y in z.find_all({'a'}):
+        if y.get('href') is not None:
+            product_url.append(y.get('href'))
+            del product_url[0]              # Delete unrelated url
 ```
 - 이번 프로젝트에선 자동으로 쿠키 허용, 광고창을 종료하였고 제품 페이지를 수집하여 접속했다.
 - 그 결과 오류 발생 빈도도 대폭 감소하였으며 크롤링 소요 시간 또한 대폭 감소하였다.

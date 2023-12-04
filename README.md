@@ -12,7 +12,7 @@ In addition, a new nutritional recommendation system through symptoms was added 
 - [이전에 진행한 영양제 분류 프로젝트](https://github.com/JiHyun-Jo7/IntelCapsule)에서 아쉬웠던 점을 보완하고자 했으며,  
   전에 없던 증상을 통한 추천 시스템을 새로 추가했다
 ---
-## [01. Crawling Data](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/14c4883aed4a2f3beeb2dda1c5409048e4b9d581/01_crawling_data.py)
+## 01. [Crawling Data](https://github.com/JiHyun-Jo7/Nutrients_Predict_and_Recommend/blob/14c4883aed4a2f3beeb2dda1c5409048e4b9d581/01_crawling_data.py)
 ```
 for i in range(6):
     section_url = 'https://kr.iherb.com/c/{}'.format(category[i])
@@ -45,15 +45,15 @@ for i in range(6):
 - 이번 프로젝트에선 자동으로 쿠키 허용, 광고창을 종료하였고 제품 페이지를 수집하여 접속했다
 - 그 결과 오류 발생 빈도도 대폭 감소하였으며 크롤링 소요 시간 또한 대폭 감소하였다
 ---
-## [02. Data Concat]()
+## 02. [Data Concat]()
 
 ---
-## [03. Preprocessing]()
+## 03. [Preprocessing]()
 
 ---
-## [04. Model Learning]()
+## 04. [Model Learning]()
 
 ---
-## [05. Model_predict]()
+## 05. [Model_predict]()
 
 ---

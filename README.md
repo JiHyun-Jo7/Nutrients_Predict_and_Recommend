@@ -1,4 +1,4 @@
-# 💊Nutrients_Predict_and_Recommend
+# 💊Nutrients Predict and Recommend
 ---
 ## 개발 환경 (IDE)
 - Win10

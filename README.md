@@ -9,7 +9,7 @@
 ##  2. Project Objectives (프로젝트 목표)
 - I tried to compensate for the disappointment in the [last nutritional classification program](https://github.com/JiHyun-Jo7/IntelCapsule)  
 In addition, a new nutritional recommendation system through symptoms was added to the program
-- crawl nutritional information on iHub (https://iherb.com/), a famous nutritional supplement site around the world,  
+- crawl nutritional information on [iHub](https://iherb.com/), a famous nutritional supplement site around the world,  
 Through this, 1. predict the effect with the name of nutritional supplements and  
 2. Create a program that recommends nutritional supplements when providing symptoms
 - [이전에 진행한 영양제 분류 프로젝트](https://github.com/JiHyun-Jo7/IntelCapsule)에서 아쉬웠던 점을 보완하고자 했으며,  
